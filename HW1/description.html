@@ -1,0 +1,5 @@
+The objective of the assignment is to demonstrate how the temperature value affects LLM output. 
+Using PyTorch and Hugging Face Transformers, the code loads a GPT-2 tokenizer and language model.
+The model is set to evaluation mode to prevent dropout, and then accepts a user input.
+This input is tokenized and converted to tensor form before being passed to the model, which then outputs logits representing unnormalized predictions scores over the vocabulary.
+The logits are transformed into probabilities via softmax function to get the most likely next token and the associated confidence value.
