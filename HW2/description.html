@@ -1,0 +1,6 @@
+The project is an implementation of a pretrained Stable Diffusion 1.5 model.
+The model denoises Gaussian noise into a coherent image for a set number of steps.
+At each step, the model predicts the noise of the current latent representation based on both the conditional (prompt) embedding and the unconditional embedding.
+These predictions are combined using the CFG to bias the denoising toward the prompt.
+The latent values are then updated, removing noise from the image.
+After the final step, the latent representation is decoded by VAE, producing an image.
