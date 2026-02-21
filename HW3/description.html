@@ -1,0 +1,8 @@
+The project is a simple chat bot using LangChain and Gemini. 
+It starts by loading a Google API key previously set up by the user.
+Next, one of various models is loaded with a temperature of 0.1 to ensure deterministic responses.
+The persona of the bot is then set with SystemMessage, also initializing the history.
+The bot then enters a interaction loop, where the user is prompted for an input.
+Each prompt is added to the history, which is sent to the model to generate a response.
+The output is extracted as plain text, printed, and then appended to the conversation history.
+This repeats until the user terminates the loop.
