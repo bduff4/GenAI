@@ -1,0 +1,4 @@
+This project is a RAG system based upon three retrieval strategies, naive vector similarity, Maximal Marginal Relevance for diversity, and a Hybrid Search for a semantic and keyword combination.
+The project loads documents that the user feeds into Colab, splits them into chunks as specified by the user, embeds them. and then retieves said chunks based on the query inputed by the user.
+The model then answers queries based on the documents, namely factual, conceptual, and technical queries.
+Based on the retriever and the specific query, different chunks of the documents are fed to an llm which generates an answer based on the information given.
